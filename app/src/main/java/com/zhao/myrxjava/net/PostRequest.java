@@ -22,7 +22,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class PostRequest extends AppCompatActivity {
 
-    public static final String TAG = "RetrofitPost";
+    public static final String TAG = "RxRetrofitPost";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +35,7 @@ public class PostRequest extends AppCompatActivity {
 
         //步骤4:创建Retrofit对象
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://fanyi.youdao.com/") // 设置 网络请求 Url
+                .baseUrl("https://fanyi.youdao.com/") // 设置 网络请求 Url
                 .addConverterFactory(GsonConverterFactory.create()) //设置使用Gson解析(记得加入依赖)
                 .build();
 
